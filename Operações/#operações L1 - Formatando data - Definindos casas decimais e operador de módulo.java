@@ -12,12 +12,14 @@ class Data {
         dia =  ler.nextInt();
         mes =  ler.nextInt();
         ano =  ler.nextInt();
-
+    
         if(hora == 24) {
             hora = 0;
         }else if(hora > 12 ){
             hora = hora - 12;
         }
         System.out.printf("%02d:%02d %02d/%02d/%d", hora, min, dia, mes, ano);
+        
+        ler.close(); //Fechando scanner
     }
 }
