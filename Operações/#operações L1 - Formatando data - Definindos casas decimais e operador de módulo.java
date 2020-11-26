@@ -18,7 +18,6 @@ class Data {
         }else if(hora > 12 ){
             hora = hora - 12;
         }
-        
         System.out.printf("%02d:%02d %02d/%02d/%d", hora, min, dia, mes, ano);
     }
 }
